@@ -1,0 +1,92 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Food Pyramid</title>
+    <style>
+      body {
+        background-color: DeepSkyBlue;
+      }
+      </style>
+</head>
+ <body>
+    <h3>My Food Pyramid</h3>
+    <form id="date-form">
+      <label for="date-input">Enter a date:</label>
+      <input type="date" id="date-input" name="date-input" required>
+      <button type="submit" id="sub">Submit</button>
+    </form>
+     <div class="container">
+      <!-- Rounded switch -->
+      <label class="switch">
+       <input type="checkbox" id="toggle">
+        <span class="slider round"></span>
+      </label>
+      <h4 class="label-text" id="toggle-text"></h4>
+     </div>
+     <div class="circle-text-container">
+      <div class="circle" id="circle1"></div>
+      <p class="text">Above the	recommended	guideline quantities.</p>
+      <div class="circle" id="circle2"></div>
+      <p class="text">Below the recommended	guideline	quantities.</p>
+      <div class="circle" id="circle3"></div>
+      <p class="text">Within the recommended guideline quantities.</p>
+      </div>
+      <div id="pyramid">
+        <div class="level one">
+          <div class="contents">
+            <p class="label">High in <br>Fats, <br> Salts & Sugars</p>
+            <button id="plus1">+</button>
+            <button id="first" class="counter"><div>0</div></button>
+            <button id="minus1">-</button>
+          </div>
+        </div> <!--close level 1-->
+
+        <div class="level two">
+          <div class="contents">
+            <p class="label">Fats, Spreads & Oils</p>
+            <button id="plus2">+</button>
+            <button id="second" class="counter"><div>0</div></button>
+            <button id="minus2">-</button>
+          </div>
+        </div> <!--close level 2-->
+
+        <div class="level three">
+          <div class="contents">
+            <p class="label">Meat, Fish, Poultry, Eggs, Beans & Nuts</p>
+            <button id="plus3">+</button>
+            <button id="third" class="counter"><div>0</div></button>
+            <button id="minus3">-</button>
+          </div>
+        </div> <!--close level 3-->
+
+        <div class="level four">
+          <div class="contents">
+            <p class="label">Milk, Yogurt and Cheese</p>
+            <button id="plus4">+</button>
+            <button id="fourth" class="counter"><div>0</div></button>
+            <button id="minus4">-</button>
+          </div>
+        </div> <!--close level 4-->
+
+        <div class="level five">
+          <div class="contents">
+            <p class="label">Wholemeal Cereals and Breads, Potatoes, Pasta and Rice</p>
+            <button id="plus5">+</button>
+            <button id="fifth" class="counter"><div>0</div></button>
+            <button id="minus5">-</button>
+          </div>
+        </div> <!--close level 5-->
+
+        <div class="level six">
+          <div class="contents">
+            <p class="label"> Vegetables, Salad and Fruits</p>
+            <button id="plus6">+</button>
+            <button id="sixth" class="counter"><div>0</div></button>
+            <button id="minus6">-</button>
+          </div>
+        </div> <!--close level 6-->
+      </div> <!--close PYRAMID-->
+      <script	src="script.js"></script>
+  </body>
+</html>
+
+
